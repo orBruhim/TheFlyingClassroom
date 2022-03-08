@@ -11,13 +11,14 @@ export interface PeriodicElement {
   x: string;
   y: string,
   z: string;
+  color?: string;
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
-  {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H', x: '3fvdcfds', y: '2', z: '3'},
-  {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H', x: '3', y: '2', z: '3'},
+  {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H', x: '3fvdcfds', y: '2', z: '3', color: '#43A149'},
+  {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H', x: '3', y: '2', z: '3', color: 'white'},
 
-  {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H', x: '3', y: '2', z: '3'},
+  {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H', x: '3', y: '2', z: '3', color: 'white'},
 
 
 
