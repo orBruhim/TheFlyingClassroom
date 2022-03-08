@@ -4,7 +4,7 @@ export const classList: Class[] =
 [
     {
     "id": 1,
-    "name": "Hebrew",
+    "name": "לשון",
     "day": 1,
     "startTime": "08:00",
     "endTime": "09:00",
@@ -13,7 +13,7 @@ export const classList: Class[] =
 
     {
     "id": 2,
-    "name": "Math",
+    "name": "חשבון",
     "day": 1,
     "startTime": "09:00",
     "endTime": "10:00",
@@ -22,7 +22,7 @@ export const classList: Class[] =
 
     {
     "id": 3,
-    "name": "Science",
+    "name": "לשון",
     "day": 1,
     "startTime": "10:00",
     "endTime": "11:00",
@@ -31,7 +31,7 @@ export const classList: Class[] =
 
     {
     "id": 4,
-    "name": "Sport",
+    "name": "ספורט",
     "day": 1,
     "startTime": "11:00",
     "endTime": "12:00",
@@ -40,7 +40,7 @@ export const classList: Class[] =
 
     {
     "id": 5,
-    "name": "English",
+    "name": "זה"ב",
     "day": 2,
     "startTime": "08:00",
     "endTime": "09:00",
@@ -49,7 +49,7 @@ export const classList: Class[] =
     
     {
     "id": 6,
-    "name": "Hebrew",
+    "name": "לשון",
     "day": 2,
     "startTime": "09:00",
     "endTime": "10:00",
@@ -58,7 +58,7 @@ export const classList: Class[] =
     
     {
     "id": 7,
-    "name": "Math",
+    "name": "מוזיקה",
     "day": 2,
     "startTime": "10:00",
     "endTime": "11:00",
@@ -67,7 +67,7 @@ export const classList: Class[] =
     
     {
     "id": 8,
-    "name": "Hebrew",
+    "name": "מוזיקה",
     "day": 2,
     "startTime": "11:00",
     "endTime": "12:00",
@@ -76,7 +76,7 @@ export const classList: Class[] =
     
     {
     "id": 9,
-    "name": "Hebrew",
+    "name": "מדעים",
     "day": 3,
     "startTime": "08:00",
     "endTime": "09:00",
@@ -85,7 +85,7 @@ export const classList: Class[] =
         
     {
     "id": 10,
-    "name": "Hebrew",
+    "name": "לשון",
     "day": 3,
     "startTime": "09:00",
     "endTime": "10:00",
@@ -94,7 +94,7 @@ export const classList: Class[] =
         
     {
     "id": 11,
-    "name": "Science",
+    "name": "לשון",
     "day": 3,
     "startTime": "10:00",
     "endTime": "11:00",
@@ -103,7 +103,7 @@ export const classList: Class[] =
         
     {
     "id": 12,
-    "name": "Math",
+    "name": "חשבון",
     "day": 3,
     "startTime": "11:00",
     "endTime": "12:00",
@@ -112,7 +112,7 @@ export const classList: Class[] =
 
     {
     "id": 13,
-    "name": "Math",
+    "name": "מלאכה",
     "day": 4,
     "startTime": "08:00",
     "endTime": "09:00",
@@ -121,7 +121,7 @@ export const classList: Class[] =
             
     {
     "id": 14,
-    "name": "Hebrew",
+    "name": "מדעים",
     "day": 4,
     "startTime": "09:00",
     "endTime": "10:00",
@@ -130,7 +130,7 @@ export const classList: Class[] =
             
     {
     "id": 15,
-    "name": "Science",
+    "name": "מדעעים",
     "day": 4,
     "startTime": "10:00",
     "endTime": "11:00",
@@ -139,7 +139,7 @@ export const classList: Class[] =
             
     {
     "id": 16,
-    "name": "Math",
+    "name": "מוזיקה",
     "day": 4,
     "startTime": "11:00",
     "endTime": "12:00",
@@ -148,7 +148,7 @@ export const classList: Class[] =
 
     {
     "id": 17,
-    "name": "Hebrew",
+    "name": "ספורט",
     "day": 5,
     "startTime": "08:00",
     "endTime": "09:00",
@@ -157,7 +157,7 @@ export const classList: Class[] =
                 
     {
     "id": 18,
-    "name": "Science",
+    "name": "לשון",
     "day": 5,
     "startTime": "09:00",
     "endTime": "10:00",
@@ -166,7 +166,7 @@ export const classList: Class[] =
                 
     {
     "id": 19,
-    "name": "Science",
+    "name": "חשבון",
     "day": 5,
     "startTime": "10:00",
     "endTime": "11:00",
@@ -175,7 +175,7 @@ export const classList: Class[] =
                 
     {
     "id": 20,
-    "name": "Hebrew",
+    "name": "חשבון",
     "day": 5,
     "startTime": "11:00",
     "endTime": "12:00",
@@ -184,7 +184,7 @@ export const classList: Class[] =
 
     {
     "id": 21,
-    "name": "Sport",
+    "name": "חברה",
     "day": 6,
     "startTime": "08:00",
     "endTime": "09:00",
@@ -193,7 +193,7 @@ export const classList: Class[] =
                     
     {
     "id": 22,
-    "name": "Hebrew",
+    "name": "חברה",
     "day": 6,
     "startTime": "09:00",
     "endTime": "10:00",
@@ -202,7 +202,7 @@ export const classList: Class[] =
                     
     {
     "id": 23,
-    "name": "Hebrew",
+    "name": "לשון",
     "day": 6,
     "startTime": "10:00",
     "endTime": "11:00",
@@ -211,12 +211,11 @@ export const classList: Class[] =
                     
     {
     "id": 24,
-    "name": "Fun",
+    "name": "ספורט",
     "day": 6,
     "startTime": "11:00",
     "endTime": "12:00",
     "link": "http://zoom.com"
-    },
-    
+    },  
 
 ]
