@@ -1,7 +1,6 @@
-import { Class } from 'src/model/class.model';
+import { classList } from '../data/classes';
+import { Class } from '../model/class.model';
 
-export class classService {
-    function getClasses(): Class[] {
-        return [];
+    export function getClasses(): Class[] {
+        return classList;
     }
-}

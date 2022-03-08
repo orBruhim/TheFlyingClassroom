@@ -10,6 +10,4 @@ export const classList: Class[] =
     "endTime": "09:00",
     "link": "http://zoom.com"
     },
-
-
 ]
