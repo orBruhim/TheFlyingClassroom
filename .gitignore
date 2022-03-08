@@ -14,7 +14,7 @@
 *.launch
 .settings/
 *.sublime-workspace
-Frontend/.angular
+**/.angular
 
 # IDE - VSCode
 .vscode/*
