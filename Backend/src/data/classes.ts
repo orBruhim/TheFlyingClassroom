@@ -1,3 +1,6 @@
+import { Class } from '../model/class.model';
+
+export const classList: Class[] = 
 [
     {
     "id": 1,
@@ -7,6 +10,6 @@
     "endTime": "09:00",
     "link": "http://zoom.com"
     },
-    
+
 
 ]

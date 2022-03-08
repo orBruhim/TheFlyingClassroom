@@ -1,4 +1,6 @@
-export class Class {
+import * from '../data/classes'
+
+export type Class = {
     id: number;
     name: string;
     day: number;
