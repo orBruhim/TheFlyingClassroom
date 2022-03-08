@@ -1,1 +1,53 @@
-<p> Hackathon </p>
+<div class="wrapper">
+    <div class="header">
+        מערכת השעות של כיתה ד׳2
+    </div>
+    <div class="bar"> Bar</div>
+    <div class="table-wrapper">
+        <table mat-table [dataSource]="dataSource" class="demo-table">
+            <!-- Position Column -->
+            <ng-container matColumnDef="position">
+                <th mat-header-cell *matHeaderCellDef>Day </th>
+                <td  class= "td-wrapper"mat-cell *matCellDef="let element">{{element.position}}</td>
+            </ng-container>
+
+            <!-- Name Column -->
+            <ng-container matColumnDef="name">
+                <th mat-header-cell *matHeaderCellDef>Sunday</th>
+                <td class= "td-wrapper" mat-cell *matCellDef="let element">{{element.name}}</td>
+            </ng-container>
+
+            <!-- Weight Column -->
+            <ng-container matColumnDef="weight">
+                <th mat-header-cell *matHeaderCellDef>Monday</th>
+                <td class= "td-wrapper" mat-cell *matCellDef="let element">{{element.weight}}</td>
+            </ng-container>
+
+            <!-- Symbol Column -->
+            <ng-container matColumnDef="symbol">
+                <th mat-header-cell *matHeaderCellDef>Thesday</th>
+                <td class= "td-wrapper" mat-cell *matCellDef="let element">{{element.symbol}}</td>
+            </ng-container>
+
+            <ng-container matColumnDef="x">
+                <th mat-header-cell *matHeaderCellDef>Wensday</th>
+                <td class= "td-wrapper" mat-cell *matCellDef="let element">{{element.x}}</td>
+            </ng-container>
+
+            <ng-container matColumnDef="y">
+                <th mat-header-cell *matHeaderCellDef>Thursday</th>
+                <td class= "td-wrapper" mat-cell *matCellDef="let element">{{element.y}}</td>
+            </ng-container>
+
+            <ng-container matColumnDef="z">
+                <th mat-header-cell *matHeaderCellDef>Friday</th>
+                <td class= "td-wrapper active" mat-cell *matCellDef="let element">{{element.z}}</td>
+            </ng-container>
+
+            
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+    </div>
+</div>
