@@ -26,7 +26,9 @@
             <!-- Symbol Column -->
             <ng-container matColumnDef="symbol">
                 <th mat-header-cell *matHeaderCellDef>Thesday</th>
-                <td class="td-wrapper" mat-cell *matCellDef="let element">{{element.symbol}}</td>
+                <td class="td-wrapper" mat-cell *matCellDef="let element" [style.background]="element?.color" >{{element.symbol}}
+                    <div *ngIf= "element.color" class= "click-here"> Click Here </div>
+                </td>
             </ng-container>
 
             <ng-container matColumnDef="x">
@@ -41,7 +43,7 @@
 
             <ng-container matColumnDef="z">
                 <th mat-header-cell *matHeaderCellDef>Friday</th>
-                <td class="td-wrapper active" [style.background]="element?.color" mat-cell
+                <td class="td-wrapper active" mat-cell
                     *matCellDef="let element">{{element.z}}</td>
             </ng-container>
 
