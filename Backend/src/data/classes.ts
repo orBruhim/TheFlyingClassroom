@@ -130,7 +130,7 @@ export const classList: Class[] =
             
     {
     "id": 15,
-    "name": "מדעעים",
+    "name": "מדעים",
     "day": 4,
     "startTime": "10:00",
     "endTime": "11:00",
@@ -152,7 +152,7 @@ export const classList: Class[] =
     "day": 5,
     "startTime": "08:00",
     "endTime": "09:00",
-    "link": "http://zoom.com"
+    "link": "https://us04web.zoom.us/wc/join/76142668407?pwd=0BVCyfuzugiX_MMQRBRAC-hT3hCUii.1"
     },
                 
     {
@@ -161,7 +161,7 @@ export const classList: Class[] =
     "day": 5,
     "startTime": "09:00",
     "endTime": "10:00",
-    "link": "http://zoom.com"
+    "link": "https://us04web.zoom.us/wc/join/76142668407?pwd=0BVCyfuzugiX_MMQRBRAC-hT3hCUii.1"
     },
                 
     {
@@ -170,7 +170,7 @@ export const classList: Class[] =
     "day": 5,
     "startTime": "10:00",
     "endTime": "11:00",
-    "link": "http://zoom.com"
+    "link": "https://us04web.zoom.us/wc/join/76142668407?pwd=0BVCyfuzugiX_MMQRBRAC-hT3hCUii.1"
     },
                 
     {
@@ -179,7 +179,7 @@ export const classList: Class[] =
     "day": 5,
     "startTime": "11:00",
     "endTime": "12:00",
-    "link": "http://zoom.com"
+    "link": "https://us04web.zoom.us/wc/join/76142668407?pwd=0BVCyfuzugiX_MMQRBRAC-hT3hCUii.1"
     },
 
     {
@@ -188,7 +188,7 @@ export const classList: Class[] =
     "day": 6,
     "startTime": "08:00",
     "endTime": "09:00",
-    "link": "http://zoom.com"
+    "link": "https://us04web.zoom.us/wc/join/76142668407?pwd=0BVCyfuzugiX_MMQRBRAC-hT3hCUii.1"
     },
                     
     {
@@ -197,7 +197,7 @@ export const classList: Class[] =
     "day": 6,
     "startTime": "09:00",
     "endTime": "10:00",
-    "link": "http://zoom.com"
+    "link": "https://us04web.zoom.us/wc/join/76142668407?pwd=0BVCyfuzugiX_MMQRBRAC-hT3hCUii.1"
     },
                     
     {
@@ -206,7 +206,7 @@ export const classList: Class[] =
     "day": 6,
     "startTime": "10:00",
     "endTime": "11:00",
-    "link": "http://zoom.com"
+    "link": "https://us04web.zoom.us/wc/join/76142668407?pwd=0BVCyfuzugiX_MMQRBRAC-hT3hCUii.1"
     },
                     
     {
@@ -215,7 +215,7 @@ export const classList: Class[] =
     "day": 6,
     "startTime": "11:00",
     "endTime": "12:00",
-    "link": "http://zoom.com"
+    "link": "https://us04web.zoom.us/wc/join/76142668407?pwd=0BVCyfuzugiX_MMQRBRAC-hT3hCUii.1"
     },  
 
 ]
