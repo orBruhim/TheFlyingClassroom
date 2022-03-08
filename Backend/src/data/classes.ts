@@ -110,4 +110,40 @@ export const classList: Class[] =
     "link": "http://zoom.com"
     },
 
+    {
+    "id": 13,
+    "name": "Math",
+    "day": 4,
+    "startTime": "08:00",
+    "endTime": "09:00",
+    "link": "http://zoom.com"
+    },
+            
+    {
+    "id": 14,
+    "name": "Hebrew",
+    "day": 4,
+    "startTime": "09:00",
+    "endTime": "10:00",
+    "link": "http://zoom.com"
+    },
+            
+    {
+    "id": 15,
+    "name": "Science",
+    "day": 4,
+    "startTime": "10:00",
+    "endTime": "11:00",
+    "link": "http://zoom.com"
+    },
+            
+    {
+    "id": 16,
+    "name": "Math",
+    "day": 4,
+    "startTime": "11:00",
+    "endTime": "12:00",
+    "link": "http://zoom.com"
+    },
+
 ]
