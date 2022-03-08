@@ -3,6 +3,10 @@
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatTable } from '@angular/material/table';
+import { MatDialog } from '@angular/material/dialog';
+import { ConfirmationDialogComponent } from './dialog/confirmation-dialog/component/confirmation-dialog.component';
+import { Router } from '@angular/router';
+
 
 export interface PeriodicElement {
   name: string;
@@ -22,6 +26,7 @@ export interface Data {
   endTime?: string;
   name?: string;
   link?: string;
+  color?: string;
 
 }
 
@@ -53,11 +58,14 @@ export class AppComponent implements OnInit {
   dataSchool: Data[] = [];
 
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient,
+    public dialog: MatDialog,
+    private router :Router) { }
 
   ngOnInit(): void {
     this.http.get<Data[]>('http://localhost:5000/api/v1/classes').subscribe(res => {
       this.dataSchool = res;
+      this.dataSchool[1].color = '#CDC9FC';
       console.log(this.dataSchool)
       // this.dataSchool = ELEMENT_DATA
     })
@@ -68,14 +76,34 @@ export class AppComponent implements OnInit {
 
   @ViewChild(MatTable) table: MatTable<PeriodicElement> | undefined;
 
-  // addData() {
-  //   const randomElementIndex = Math.floor(Math.random() * ELEMENT_DATA.length);
-  //   this.dataSource.push(ELEMENT_DATA[randomElementIndex]);
-  //   this.table?.renderRows();
-  // }
+  openDialog() {
+    const dialogRef= this.dialog.open(ConfirmationDialogComponent, {
+      panelClass: 'alert-manager-dialog',
+      data: {
+        title: 'שלום יובל, הגיע הזמן להיכנס לשיעור חשבון',
+        message:
+          `<div class= "equipment">
+      :צריך לוודא שיש לנו        </div>
+        <div>
+          מחברת*        <br>
+          קלמר*        <br>
+          מחשבון*        </div>
+        `,
+        buttonText: 'אני רוצה להתחיל',
+      },
+    });
+    // const dialogRef = this.dialog.open(ConfirmationDialogComponent);
 
-  // removeData() {
-  //   this.dataSource.pop();
-  //   this.table?.renderRows();
-  // }
+    // dialogRef.afterClosed().subscribe(result => {
+    //   this.router.navigate(['https://us04web.zoom.us/wc/join/76142668407?pwd=0BVCyfuzugiX_MMQRBRAC-hT3hCUii.1'])
+    //   console.log(`Dialog result: ${result}`);
+    // });
+  }
+
+ 
+
+  
+
+
 }
+

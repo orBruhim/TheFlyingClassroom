@@ -1,0 +1,15 @@
+<div class="dialog-wrapper">
+  <div class="header">
+    <div class="header-title">{{ data.title }}</div>
+    <div (click)="closeDialog()" class="header-close">&#x2715;</div>
+  </div>
+
+  <div class="body">
+    <div class="context" [innerHtml]="data.message">{{ data.message }}</div>
+    <a href="https://us04web.zoom.us/wc/join/76142668407?pwd=0BVCyfuzugiX_MMQRBRAC-hT3hCUii.1">
+
+    <button >{{ data.buttonText }}
+    </button>
+    </a>
+  </div>
+</div>

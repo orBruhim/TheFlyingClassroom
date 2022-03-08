@@ -12,38 +12,43 @@
             </ng-container> -->
 
             <!-- Name Column -->
+            
             <ng-container matColumnDef="name">
-                <th mat-header-cell *matHeaderCellDef>Sunday</th>
+                <th mat-header-cell *matHeaderCellDef>שישי</th>
                 <td class="td-wrapper" mat-cell *matCellDef="let element">{{element.name}}</td>
             </ng-container>
 
             <!-- Weight Column -->
             <ng-container matColumnDef="weight">
-                <th mat-header-cell *matHeaderCellDef>Monday</th>
+                <th mat-header-cell *matHeaderCellDef>חמישי</th>
                 <td class="td-wrapper" mat-cell *matCellDef="let element">{{element.name}}</td>
             </ng-container>
 
             <!-- Symbol Column -->
             <ng-container matColumnDef="symbol">
-                <th mat-header-cell *matHeaderCellDef>Thesday</th>
+                <th mat-header-cell *matHeaderCellDef>רביעי</th>
                 <td class="td-wrapper" mat-cell *matCellDef="let element" [style.background]="element?.color">
                     {{element.name}}
-                    <div *ngIf="element.color" class="click-here"> Click Here </div>
+                    <div *ngIf="element.color" class="click-here" (click)="openDialog()">
+                        <b>
+                            לכניסה לשיעור לחץ כאן
+                        </b>
+                    </div>
                 </td>
             </ng-container>
 
             <ng-container matColumnDef="x">
-                <th mat-header-cell *matHeaderCellDef>Wensday</th>
+                <th mat-header-cell *matHeaderCellDef>שלישי</th>
                 <td class="td-wrapper" mat-cell *matCellDef="let element">{{element.name}}</td>
             </ng-container>
 
             <ng-container matColumnDef="y">
-                <th mat-header-cell *matHeaderCellDef>Thursday</th>
+                <th mat-header-cell *matHeaderCellDef>שני</th>
                 <td class="td-wrapper" mat-cell *matCellDef="let element">{{element.name}}</td>
             </ng-container>
 
             <ng-container matColumnDef="z">
-                <th mat-header-cell *matHeaderCellDef>Friday</th>
+                <th mat-header-cell *matHeaderCellDef>ראשון</th>
                 <td class="td-wrapper active" mat-cell *matCellDef="let element">{{element.name}}</td>
             </ng-container>
 

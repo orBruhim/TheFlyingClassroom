@@ -1,1 +1,83 @@
-/* You can add global styles to this file, and also import other style files */
+// // /* You can add global styles to this file, and also import other style files */
+
+// .alert-manager-dialog .mat-dialog-container {
+//     padding: 0;
+//     border-radius: 8px;
+  
+//     .station-add-coordinate-text {
+//       display: flex;
+//       padding: 17px;
+//       gap: 5px;
+//     }
+//     .station-delete-text {
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       flex-direction: column;
+//       gap: 5px;
+//     }
+  
+//     .calibration-device-text {
+//       display: flex;
+//       align-items: center;
+//       // gap: 6px;
+//     }
+  
+//     .calibration-device-img {
+//       align-items: center;
+//     }
+//   }
+  
+//   .dialog-custom-css .mat-dialog-container {
+//     padding: 0;
+//     border-radius: 8px;
+//   }
+  
+//   .alert-manager-menu {
+//     &.mat-menu-panel {
+//       min-height: fit-content;
+//     }
+  
+//     .item {
+//       display: flex;
+//       align-items: center;
+//       padding: 10px;
+//       height: 34px;
+  
+//       &:hover {
+//         background-color: #e3f2ee;
+//       }
+  
+//       .device-menu-text {
+//         margin-right: 4px;
+//       }
+//     }
+//   }
+  
+//   table {
+//     tr > th {
+//       font-weight: 500;
+//     }
+//   }
+  
+  
+//   // roemove google logo from the map ---- DON`T DELETE-------
+//   //***************************************************************
+//   a[href^="http://maps.google.com/maps"]
+//   {
+//     display: none !important;
+//   }
+//   a[href^="https://maps.google.com/maps"]
+//   {
+//     display: none !important;
+//   }
+//   .gmnoprint a,
+//   .gmnoprint span,
+//   .gm-style-cc {
+//     display: none;
+//   }
+//   .gmnoprint div {
+//     background: none !important;
+//   }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
