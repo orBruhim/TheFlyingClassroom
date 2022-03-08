@@ -8,7 +8,7 @@ export const classList: Class[] =
     "day": 1,
     "startTime": "08:00",
     "endTime": "09:00",
-    "link": "http://zoom.com"
+    "link": "https://us04web.zoom.us/wc/join/76142668407?pwd=0BVCyfuzugiX_MMQRBRAC-hT3hCUii.1"
     },
 
     {
@@ -17,7 +17,7 @@ export const classList: Class[] =
     "day": 1,
     "startTime": "09:00",
     "endTime": "10:00",
-    "link": "http://zoom.com"
+    "link": "https://us04web.zoom.us/wc/join/76142668407?pwd=0BVCyfuzugiX_MMQRBRAC-hT3hCUii.1"
     },
 
     {
@@ -26,7 +26,7 @@ export const classList: Class[] =
     "day": 1,
     "startTime": "10:00",
     "endTime": "11:00",
-    "link": "http://zoom.com"
+    "link": "https://us04web.zoom.us/wc/join/76142668407?pwd=0BVCyfuzugiX_MMQRBRAC-hT3hCUii.1"
     },
 
     {
@@ -35,7 +35,7 @@ export const classList: Class[] =
     "day": 1,
     "startTime": "11:00",
     "endTime": "12:00",
-    "link": "http://zoom.com"
+    "link": "https://us04web.zoom.us/wc/join/76142668407?pwd=0BVCyfuzugiX_MMQRBRAC-hT3hCUii.1"
     },
 
     {
@@ -44,7 +44,7 @@ export const classList: Class[] =
     "day": 2,
     "startTime": "08:00",
     "endTime": "09:00",
-    "link": "http://zoom.com"
+    "link": "https://us04web.zoom.us/wc/join/76142668407?pwd=0BVCyfuzugiX_MMQRBRAC-hT3hCUii.1"
     },
     
     {
@@ -53,7 +53,7 @@ export const classList: Class[] =
     "day": 2,
     "startTime": "09:00",
     "endTime": "10:00",
-    "link": "http://zoom.com"
+    "link": "https://us04web.zoom.us/wc/join/76142668407?pwd=0BVCyfuzugiX_MMQRBRAC-hT3hCUii.1"
     },
     
     {
@@ -62,7 +62,7 @@ export const classList: Class[] =
     "day": 2,
     "startTime": "10:00",
     "endTime": "11:00",
-    "link": "http://zoom.com"
+    "link": "https://us04web.zoom.us/wc/join/76142668407?pwd=0BVCyfuzugiX_MMQRBRAC-hT3hCUii.1"
     },
     
     {
@@ -71,7 +71,7 @@ export const classList: Class[] =
     "day": 2,
     "startTime": "11:00",
     "endTime": "12:00",
-    "link": "http://zoom.com"
+    "link": "https://us04web.zoom.us/wc/join/76142668407?pwd=0BVCyfuzugiX_MMQRBRAC-hT3hCUii.1"
     },
     
     {
@@ -80,7 +80,7 @@ export const classList: Class[] =
     "day": 3,
     "startTime": "08:00",
     "endTime": "09:00",
-    "link": "http://zoom.com"
+    "link": "https://us04web.zoom.us/wc/join/76142668407?pwd=0BVCyfuzugiX_MMQRBRAC-hT3hCUii.1"
     },
         
     {
@@ -89,7 +89,7 @@ export const classList: Class[] =
     "day": 3,
     "startTime": "09:00",
     "endTime": "10:00",
-    "link": "http://zoom.com"
+    "link": "https://us04web.zoom.us/wc/join/76142668407?pwd=0BVCyfuzugiX_MMQRBRAC-hT3hCUii.1"
     },
         
     {
@@ -98,7 +98,7 @@ export const classList: Class[] =
     "day": 3,
     "startTime": "10:00",
     "endTime": "11:00",
-    "link": "http://zoom.com"
+    "link": "https://us04web.zoom.us/wc/join/76142668407?pwd=0BVCyfuzugiX_MMQRBRAC-hT3hCUii.1"
     },
         
     {
@@ -107,7 +107,7 @@ export const classList: Class[] =
     "day": 3,
     "startTime": "11:00",
     "endTime": "12:00",
-    "link": "http://zoom.com"
+    "link": "https://us04web.zoom.us/wc/join/76142668407?pwd=0BVCyfuzugiX_MMQRBRAC-hT3hCUii.1"
     },
 
     {
@@ -116,7 +116,7 @@ export const classList: Class[] =
     "day": 4,
     "startTime": "08:00",
     "endTime": "09:00",
-    "link": "http://zoom.com"
+    "link": "https://us04web.zoom.us/wc/join/76142668407?pwd=0BVCyfuzugiX_MMQRBRAC-hT3hCUii.1"
     },
             
     {
@@ -125,7 +125,7 @@ export const classList: Class[] =
     "day": 4,
     "startTime": "09:00",
     "endTime": "10:00",
-    "link": "http://zoom.com"
+    "link": "https://us04web.zoom.us/wc/join/76142668407?pwd=0BVCyfuzugiX_MMQRBRAC-hT3hCUii.1"
     },
             
     {
@@ -134,7 +134,7 @@ export const classList: Class[] =
     "day": 4,
     "startTime": "10:00",
     "endTime": "11:00",
-    "link": "http://zoom.com"
+    "link": "https://us04web.zoom.us/wc/join/76142668407?pwd=0BVCyfuzugiX_MMQRBRAC-hT3hCUii.1"
     },
             
     {
@@ -143,7 +143,7 @@ export const classList: Class[] =
     "day": 4,
     "startTime": "11:00",
     "endTime": "12:00",
-    "link": "http://zoom.com"
+    "link": "https://us04web.zoom.us/wc/join/76142668407?pwd=0BVCyfuzugiX_MMQRBRAC-hT3hCUii.1"
     },
 
     {
