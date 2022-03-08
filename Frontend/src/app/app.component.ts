@@ -3,6 +3,7 @@
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatTable } from '@angular/material/table';
+import { groupBy } from 'lodash'
 
 export interface PeriodicElement {
   name: string;
@@ -14,14 +15,15 @@ export interface PeriodicElement {
   z: string;
   color?: string;
 }
+type Day = 1 | 2 | 3 | 4 | 5 | 6
+
 
 export interface Data {
-  id?: number;
-  day?: string;
-  startTime?: string;
-  endTime?: string;
-  name?: string;
-  link?: string;
+  id: number;
+  day: Day;
+  startTime: string;
+  name: string;
+  link: string;
 
 }
 
@@ -43,6 +45,13 @@ let ELEMENT_DATA: PeriodicElement[] = [
   // {position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne'},
 ];
 
+
+type TableData = Record<string, {
+  name: string
+  color?: string
+  link: string
+} | undefined>
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -50,15 +59,19 @@ let ELEMENT_DATA: PeriodicElement[] = [
 })
 export class AppComponent implements OnInit {
 
-  dataSchool: Data[] = [];
+  dataSchool: TableData[] = [];
 
 
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
     this.http.get<Data[]>('http://localhost:5000/api/v1/classes').subscribe(res => {
-      this.dataSchool = res;
-      console.log(this.dataSchool)
+      const times = ['08:00', '09:00', '10:00', '11:00']
+      const days = [1, 2, 3, 4, 5, 6]
+      const tableData: TableData[] = times.map(
+        time => Object.fromEntries(days.map(day => [day, res.find(c => c.day === day && c.startTime === time)])
+      ))
+      this.dataSchool = tableData
       // this.dataSchool = ELEMENT_DATA
     })
   }

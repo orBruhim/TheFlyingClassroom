@@ -5,46 +5,40 @@
     <div class="bar"> Bar</div>
     <div class="table-wrapper">
         <table mat-table [dataSource]="dataSchool" class="demo-table">
-            <!-- Position Column -->
-            <!-- <ng-container matColumnDef="position">
-                <th mat-header-cell *matHeaderCellDef>Day </th>
-                <td class="td-wrapper" mat-cell *matCellDef="let element">{{element.name}}</td>
-            </ng-container> -->
-
             <!-- Name Column -->
             <ng-container matColumnDef="name">
                 <th mat-header-cell *matHeaderCellDef>Sunday</th>
-                <td class="td-wrapper" mat-cell *matCellDef="let element">{{element.name}}</td>
+                <td class="td-wrapper" mat-cell *matCellDef="let element">{{element[1].name}}</td>
             </ng-container>
 
             <!-- Weight Column -->
             <ng-container matColumnDef="weight">
                 <th mat-header-cell *matHeaderCellDef>Monday</th>
-                <td class="td-wrapper" mat-cell *matCellDef="let element">{{element.name}}</td>
+                <td class="td-wrapper" mat-cell *matCellDef="let element">{{element[2].name}}</td>
             </ng-container>
 
             <!-- Symbol Column -->
             <ng-container matColumnDef="symbol">
                 <th mat-header-cell *matHeaderCellDef>Thesday</th>
                 <td class="td-wrapper" mat-cell *matCellDef="let element" [style.background]="element?.color">
-                    {{element.name}}
+                    {{element[3].name}}
                     <div *ngIf="element.color" class="click-here"> Click Here </div>
                 </td>
             </ng-container>
 
             <ng-container matColumnDef="x">
                 <th mat-header-cell *matHeaderCellDef>Wensday</th>
-                <td class="td-wrapper" mat-cell *matCellDef="let element">{{element.name}}</td>
+                <td class="td-wrapper" mat-cell *matCellDef="let element">{{element[4].name}}</td>
             </ng-container>
 
             <ng-container matColumnDef="y">
                 <th mat-header-cell *matHeaderCellDef>Thursday</th>
-                <td class="td-wrapper" mat-cell *matCellDef="let element">{{element.name}}</td>
+                <td class="td-wrapper" mat-cell *matCellDef="let element">{{element[5].name}}</td>
             </ng-container>
 
             <ng-container matColumnDef="z">
                 <th mat-header-cell *matHeaderCellDef>Friday</th>
-                <td class="td-wrapper active" mat-cell *matCellDef="let element">{{element.name}}</td>
+                <td class="td-wrapper active" mat-cell *matCellDef="let element">{{element[6].name}}</td>
             </ng-container>
 
 
