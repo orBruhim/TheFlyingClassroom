@@ -146,4 +146,77 @@ export const classList: Class[] =
     "link": "https://us04web.zoom.us/wc/join/76142668407?pwd=0BVCyfuzugiX_MMQRBRAC-hT3hCUii.1"
     },
 
+    {
+    "id": 17,
+    "name": "Hebrew",
+    "day": 5,
+    "startTime": "08:00",
+    "endTime": "09:00",
+    "link": "http://zoom.com"
+    },
+                
+    {
+    "id": 18,
+    "name": "Science",
+    "day": 5,
+    "startTime": "09:00",
+    "endTime": "10:00",
+    "link": "http://zoom.com"
+    },
+                
+    {
+    "id": 19,
+    "name": "Science",
+    "day": 5,
+    "startTime": "10:00",
+    "endTime": "11:00",
+    "link": "http://zoom.com"
+    },
+                
+    {
+    "id": 20,
+    "name": "Hebrew",
+    "day": 5,
+    "startTime": "11:00",
+    "endTime": "12:00",
+    "link": "http://zoom.com"
+    },
+
+    {
+    "id": 21,
+    "name": "Sport",
+    "day": 6,
+    "startTime": "08:00",
+    "endTime": "09:00",
+    "link": "http://zoom.com"
+    },
+                    
+    {
+    "id": 22,
+    "name": "Hebrew",
+    "day": 6,
+    "startTime": "09:00",
+    "endTime": "10:00",
+    "link": "http://zoom.com"
+    },
+                    
+    {
+    "id": 23,
+    "name": "Hebrew",
+    "day": 6,
+    "startTime": "10:00",
+    "endTime": "11:00",
+    "link": "http://zoom.com"
+    },
+                    
+    {
+    "id": 24,
+    "name": "Fun",
+    "day": 6,
+    "startTime": "11:00",
+    "endTime": "12:00",
+    "link": "http://zoom.com"
+    },
+    
+
 ]
