@@ -1,7 +1,8 @@
 
 
-import {Component, ViewChild} from '@angular/core';
-import {MatTable} from '@angular/material/table';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { MatTable } from '@angular/material/table';
 
 export interface PeriodicElement {
   name: string;
@@ -14,12 +15,21 @@ export interface PeriodicElement {
   color?: string;
 }
 
-const ELEMENT_DATA: PeriodicElement[] = [
-  {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H', x: '3fvdcfds', y: '2', z: '3', color: '#43A149'},
-  {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H', x: '3', y: '2', z: '3', color: 'white'},
+export interface Data {
+  id?: number;
+  day?: string;
+  startTime?: string;
+  endTime?: string;
+  name?: string;
+  link?: string;
 
-  {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H', x: '3', y: '2', z: '3', color: 'white'},
+}
 
+let ELEMENT_DATA: PeriodicElement[] = [
+  { position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H', x: '3fvdcfds', y: '2', z: '3', color: '#CDC9FC' },
+  { position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H', x: '3', y: '2', z: '3', },
+
+  { position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H', x: '3', y: '2', z: '3' },
 
 
   // {position: 2, name: 'Helium', weight: 4.0026, symbol: 'He'},
@@ -38,20 +48,34 @@ const ELEMENT_DATA: PeriodicElement[] = [
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-displayedColumns: string[] = ['position', 'name', 'weight', 'symbol', 'x', 'y', 'z'];
-  dataSource = [...ELEMENT_DATA];
+export class AppComponent implements OnInit {
+
+  dataSchool: Data[] = [];
+
+
+  constructor(private http: HttpClient) { }
+
+  ngOnInit(): void {
+    this.http.get<Data[]>('http://localhost:5000/api/v1/classes').subscribe(res => {
+      this.dataSchool = res;
+      console.log(this.dataSchool)
+      // this.dataSchool = ELEMENT_DATA
+    })
+  }
+
+  displayedColumns: string[] = ['name', 'weight', 'symbol', 'x', 'y', 'z'];
+  dataSource = [...this.dataSchool];
 
   @ViewChild(MatTable) table: MatTable<PeriodicElement> | undefined;
 
-  addData() {
-    const randomElementIndex = Math.floor(Math.random() * ELEMENT_DATA.length);
-    this.dataSource.push(ELEMENT_DATA[randomElementIndex]);
-    this.table?.renderRows();
-  }
+  // addData() {
+  //   const randomElementIndex = Math.floor(Math.random() * ELEMENT_DATA.length);
+  //   this.dataSource.push(ELEMENT_DATA[randomElementIndex]);
+  //   this.table?.renderRows();
+  // }
 
-  removeData() {
-    this.dataSource.pop();
-    this.table?.renderRows();
-  }
+  // removeData() {
+  //   this.dataSource.pop();
+  //   this.table?.renderRows();
+  // }
 }

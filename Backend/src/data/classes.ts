@@ -40,7 +40,7 @@ export const classList: Class[] =
 
     {
     "id": 5,
-    "name": "זה"ב",
+    "name": "זהירות בדרכים",
     "day": 2,
     "startTime": "08:00",
     "endTime": "09:00",

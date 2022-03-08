@@ -8,7 +8,7 @@
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 
     .header {
-        color: #ec9d36;
+        color: #6d6dc9;
         font-size: 40px;
     }
     .bar {
@@ -23,19 +23,26 @@
         .demo-table {
             width: 100%;
             font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-            color: grey;
+            color: black;
             font-size: 20px;
             border: solid 1px #8276ee;
             width: 1200px;
 
             th{
                 text-align: center;
+                color: #8276ee;
             }
 
             .td-wrapper {
                 justify-content: center;
                 text-align: center;
                 height: 60px;
+                // background-color:#BABEBF ;
+                border: 1px solid #8276ee;
+
+                .click-here{
+                    cursor: pointer;
+                }
             }
         }
     }

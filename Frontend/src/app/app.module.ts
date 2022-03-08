@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {MatTableModule} from '@angular/material/table';
+import { HttpClientModule } from '@angular/common/http';
 
 import {MatDialogModule} from '@angular/material/dialog';
 
@@ -15,7 +16,8 @@ import {MatDialogModule} from '@angular/material/dialog';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatTableModule
+    MatTableModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
