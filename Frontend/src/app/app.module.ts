@@ -7,6 +7,9 @@ import {MatTableModule} from '@angular/material/table';
 import { HttpClientModule } from '@angular/common/http';
 
 import {MatDialogModule} from '@angular/material/dialog';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ConfirmationDialogModule } from './dialog/confirmation-dialog/confirmation-dialog.module';
+
 
 
 @NgModule({
@@ -17,7 +20,10 @@ import {MatDialogModule} from '@angular/material/dialog';
     BrowserModule,
     AppRoutingModule,
     MatTableModule,
-    HttpClientModule
+    HttpClientModule,
+    MatDialogModule,
+    BrowserAnimationsModule,
+    ConfirmationDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

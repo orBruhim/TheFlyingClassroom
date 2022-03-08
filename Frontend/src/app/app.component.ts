@@ -4,6 +4,10 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatTable } from '@angular/material/table';
 import { groupBy } from 'lodash'
+import { MatDialog } from '@angular/material/dialog';
+import { ConfirmationDialogComponent } from './dialog/confirmation-dialog/component/confirmation-dialog.component';
+import { Router } from '@angular/router';
+
 
 export interface PeriodicElement {
   name: string;
@@ -24,7 +28,6 @@ export interface Data {
   startTime: string;
   name: string;
   link: string;
-
 }
 
 let ELEMENT_DATA: PeriodicElement[] = [
@@ -62,17 +65,22 @@ export class AppComponent implements OnInit {
   dataSchool: TableData[] = [];
 
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient,
+    public dialog: MatDialog,
+    private router :Router) { }
 
   ngOnInit(): void {
     this.http.get<Data[]>('http://localhost:5000/api/v1/classes').subscribe(res => {
       const times = ['08:00', '09:00', '10:00', '11:00']
       const days = [1, 2, 3, 4, 5, 6]
       const tableData: TableData[] = times.map(
-        time => Object.fromEntries(days.map(day => [day, res.find(c => c.day === day && c.startTime === time)])
+        time => Object.fromEntries(days.map(
+          day => [day, res.find(c => c.day === day && c.startTime === time
+        )])
       ))
       this.dataSchool = tableData
-      // this.dataSchool = ELEMENT_DATA
+      // @ts-ignore
+      this.dataSchool[1][1].color = '#CDC9FC';
     })
   }
 
@@ -81,14 +89,34 @@ export class AppComponent implements OnInit {
 
   @ViewChild(MatTable) table: MatTable<PeriodicElement> | undefined;
 
-  // addData() {
-  //   const randomElementIndex = Math.floor(Math.random() * ELEMENT_DATA.length);
-  //   this.dataSource.push(ELEMENT_DATA[randomElementIndex]);
-  //   this.table?.renderRows();
-  // }
+  openDialog() {
+    const dialogRef= this.dialog.open(ConfirmationDialogComponent, {
+      panelClass: 'alert-manager-dialog',
+      data: {
+        title: 'שלום יובל, הגיע הזמן להיכנס לשיעור חשבון',
+        message:
+          `<div class= "equipment">
+      :צריך לוודא שיש לנו        </div>
+        <div>
+          מחברת*        <br>
+          קלמר*        <br>
+          מחשבון*        </div>
+        `,
+        buttonText: 'אני רוצה להתחיל',
+      },
+    });
+    // const dialogRef = this.dialog.open(ConfirmationDialogComponent);
 
-  // removeData() {
-  //   this.dataSource.pop();
-  //   this.table?.renderRows();
-  // }
+    // dialogRef.afterClosed().subscribe(result => {
+    //   this.router.navigate(['https://us04web.zoom.us/wc/join/76142668407?pwd=0BVCyfuzugiX_MMQRBRAC-hT3hCUii.1'])
+    //   console.log(`Dialog result: ${result}`);
+    // });
+  }
+
+ 
+
+  
+
+
 }
+
